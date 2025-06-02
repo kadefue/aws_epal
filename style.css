@@ -1,0 +1,276 @@
+/* Basic Reset & Body Styling */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #333; /* Dark background for header */
+    color: #fff;
+    padding: 1rem 0;
+    border-bottom: 3px solid #007bff; /* Accent color like epalab.org (blue) */
+}
+
+nav {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #007bff; /* Active/hover link background */
+    color: #fff;
+}
+
+/* Main Content Area */
+main {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.hero {
+    background-color: #007bff; /* Similar to epalab's blue banner */
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #f0f0f0;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #28a745; /* Green button like some on epalab */
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.content-preview {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.content-preview h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.preview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.preview-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.preview-item h3 a {
+    color: #007bff;
+    text-decoration: none;
+}
+.preview-item h3 a:hover {
+    text-decoration: underline;
+}
+
+
+.page-title {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+}
+
+.page-title h1 {
+    font-size: 2.2em;
+    color: #0056b3; /* Darker blue for titles */
+}
+
+.content {
+    padding: 10px;
+}
+
+.content h2 {
+    color: #0056b3;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.content p, .content ul, .content article {
+    margin-bottom: 15px;
+}
+
+.content ul {
+    list-style-position: inside;
+    padding-left: 20px;
+}
+
+.research-item {
+    background-color: #fdfdfd;
+    padding: 15px;
+    border: 1px solid #e7e7e7;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.research-item h2 {
+    border-bottom: none; /* Remove double border */
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.team-member {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.team-member img { /* If you add images */
+    max-width: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.team-member h3 {
+    margin-bottom: 5px;
+    color: #007bff;
+}
+
+.team-member p {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+.team-member a {
+    color: #007bff;
+    text-decoration: none;
+}
+.team-member a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Page Specific */
+.map-container { /* If you embed a map */
+    margin-top: 20px;
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #eee; /* Placeholder background */
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Contact Form (Basic Styling - backend not included) */
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: calc(100% - 22px); /* Adjust for padding and border */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+/* Footer */
+footer {
+    background-color: #222; /* Darker footer */
+    color: #aaa;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    color: #aaa;
+}
